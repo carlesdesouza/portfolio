@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0080ce;
+      }
+
+      .cls-2 {
+        fill: #00b5f8;
+      }
+
+      .cls-3 {
+        fill: url(#Dégradé_sans_nom);
+        fill-opacity: .8;
+      }
+
+      .cls-4 {
+        fill: #47c5fb;
+      }
+
+      .cls-5 {
+        fill: #00569e;
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom" data-name="Dégradé sans nom" x1="-381.15" y1="17.28" x2="-379.5" y2="17.88" gradientTransform="translate(17382.68 -160.92) scale(44.59)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="m0,400V0h800v800H0"/>
+  <g>
+    <polygon class="cls-4" points="469.06 36 106.53 398.52 218.73 510.73 693.47 36 469.06 36"/>
+    <polygon class="cls-4" points="466.53 370.31 272.42 564.42 385.05 678.74 497.05 566.74 693.47 370.31 466.53 370.31"/>
+    <polygon class="cls-5" points="385.05 678.74 470.31 764 693.47 764 497.05 566.74 385.05 678.74"/>
+    <polygon class="cls-2" points="271.15 565.69 383.37 453.48 497.05 566.74 385.05 678.74 271.15 565.69"/>
+    <polygon class="cls-3" points="385.05 678.74 478.32 647.79 487.57 576.21 385.05 678.74"/>
+  </g>
+</svg>

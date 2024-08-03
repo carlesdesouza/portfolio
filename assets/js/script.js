@@ -65,7 +65,7 @@ let lastClickedBtn = filterBtn[0];
 
 for (let i = 0; i < filterBtn.length; i++) {
 
-  filterBtn[i].addEventListener("click", function () {
+  filterBtn[i].addEventListener("click", function() {
 
     let selectedValue = this.innerText.length;
     selectValue.innerText = this.length;

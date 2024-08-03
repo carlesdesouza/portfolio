@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr" prefix="og: http://ogp.me/ns#">
+<html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Carles, De Souza, développeur, frontend, fullstack, programmation">
-    <meta name="description" content="Développeur Front-End">
+    <meta name="keywords" content="Carles, De Souza, developer, frontend, fullstack, programming, coding">
+    <meta name="description" content="Front-End Developer">
     <meta property="og:title" content="Carles De Souza">
-    <meta property="og:description" content="Portfolio • Développeur Fullstack">
+    <meta property="og:description" content="Portfolio • Fullstack Developer">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://carlesdesouza.github.io/portfolio/assets/images/thumbnail.jpg">
     <meta property="og:image:width" content="4750">
@@ -33,7 +33,7 @@
   </head>
 
   <body class="dark_theme">
-   
+    
     <div class="buttons">
 
       <!--change theme button--> 
@@ -46,7 +46,7 @@
 
       <!--translate button-->
       <div class="btn-translator">
-        <a href="./english.html">
+        <a href="./french.html">
           <button id="btn-language">
             <svg class="svgIcon" id="translation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.42 49.97">
               <g>
@@ -56,18 +56,35 @@
               <path d="m44.3,29.15h0l-3.07-7.35c-.16-.37-.52-.61-.92-.61s-.77.24-.92.61l-3.07,7.34h0l-1.36,3.25c-.21.51.03,1.1.54,1.31.51.21,1.1-.03,1.31-.54l1.1-2.63h4.8l1.1,2.63c.16.38.53.61.92.61.13,0,.26-.03.39-.08.51-.21.75-.8.54-1.31,0,0-1.36-3.23-1.36-3.23Zm-5.56-.62l1.57-3.75,1.57,3.75h-3.14Z"/>
               <path d="m49.42,43.98V14.62c0-3.31-2.7-6.01-6.01-6.01h-18.46l-2.75-7.94c-.14-.4-.52-.67-.94-.67H6.01C2.7,0,0,2.7,0,6.01v29.35c0,3.32,2.7,6.02,6.01,6.02h17.8l2.75,7.94.03.06s.04.08.06.11c.04.07.09.14.15.19.02.02.03.04.05.06,0,0,.03,0,.04.02.06.05.12.08.19.11.03.02.06.04.1.05.09.03.19.05.28.05h15.95c3.32.02,6.01-2.68,6.01-6h0ZM2,35.36V6.01c0-2.21,1.8-4.01,4.01-4.01h14.54l12.93,37.39H6.01c-2.21,0-4.01-1.81-4.01-4.03Zm30.71,6.03l-4.83,5.64-1.95-5.64h6.78Zm14.71,2.59c0,2.22-1.8,4.02-4.01,4.02h-13.74l5.97-6.96v-.03s.03-.03.04-.04c.06-.08.1-.16.13-.25,0-.02,0-.04.02-.06.03-.1.04-.21.04-.32v-.03c0-.08-.02-.16-.05-.24l-10.19-29.45h17.77c2.21,0,4.01,1.8,4.01,4.01v29.35h0Z"/>
             </svg>
-            <span id="language-name">Français</span>
+            <span id="language-name">English</span>
           </button>
         </a>
       </div>
     </div>
 
-    <!-- MAIN FRENCH-->
-    <main id="french">
+    <!-- Modal -->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Advice for French speakers <img class="flag" src="./assets/images/flag-france.webp" alt="France flag"></h5>
+          </div>
+          <div class="modal-body">
+            S'il vous plaît, n'utilisez <strong>PAS</strong> le traducteur de Google, il déforme mes informations, utilisez le traducteur natif du site web pour une meilleure expérience !
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="modalClose" data-bs-dismiss="modal">J'ai compris</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <!---SIDEBAR-->
+    <!-- MAIN ENGLISH-->
+    <main id="english">
+
+      <!---sidebar-->
       <aside class="sidebar" data-sidebar>
-
+        
         <div class="sidebar-info">
 
           <figure class="avatar-box">
@@ -77,11 +94,11 @@
           <div class="info-content">
             <h1 class="name" title="Carles De Souza">Carles De Souza</h1>
 
-            <p class="title">Développeur Fullstack</p>
+            <p class="title">Fullstack Developer</p>
           </div>
 
           <button class="info_more-btn" data-sidebar-btn>
-            <span id="sidebar-text">Afficher les Contacts</span>
+            <span id="sidebar-text">Show Contacts</span>
 
             <ion-icon name="chevron-down"></ion-icon>
           </button>
@@ -93,20 +110,22 @@
           <div class="separator"></div>
 
           <ul class="contacts-list">
-
             <li class="contact-item">
               <div class="icon-box">
                 <ion-icon name="document-text-outline"></ion-icon>
               </div>
               
               <div class="contact-info">
-                <a href="https://drive.google.com/u/0/uc?id=1vNLwsPvTYVnoKtnAKikM4kuVLhYBK2BE&export=download" rel="noopener noreferrer">
+                <a href="https://drive.google.com/u/0/uc?id=1vTIWbZdayJMRPDSbWZJnAbhj6YxRCk7v&export=download" rel="noopener noreferrer">
                   <button class="btn-download">
-                    <span id="btn-download-text">Télécharger mon CV</span>
+
+                    <span id="btn-download-text">Download my CV</span>
                     <span class="button__icon">
+
                       <div class="icon-color">
                         <ion-icon name="download-outline"></ion-icon>
                       </div>
+
                     </span>
                   </button>
                 </a> 
@@ -134,7 +153,7 @@
               </div>
 
               <div class="contact-info">
-                <p class="contact-title">Téléphone</p>
+                <p class="contact-title">Phone</p>
 
                 <a href="tel:+243820515953" class="contact-link">+243 820 515 953</a>
               </div>
@@ -148,25 +167,25 @@
               </div>
 
               <div class="contact-info">
-                <p class="contact-title">Localisation</p>
+                <p class="contact-title">Location</p>
                 
-                <a href="https://goo.gl/maps/aGDSZ2V2gz8m1omdA" target="_blank" class="contact-link">Lemba, Kinshasa, RDC</a>
+                <a href="https://goo.gl/maps/aGDSZ2V2gz8m1omdA" target="_blank" class="contact-link">Lemba, Kinshasa, DRC</a>
               </div>
 
             </li>
 
           </ul>
 
-          <div class="separator"></div>
+           <div class="separator"></div>
 
-          <ul class="social-list">
+           <ul class="social-list">
   
             <li class="social-item">
               <a href="https://www.linkedin.com/in/carles-de-souza" target="_blank" class="social-link">
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
-
+            
             <li class="social-item">
               <a href="https://github.com/carlesdesouza" target="_blank" class="social-link">
                 <ion-icon name="logo-github"></ion-icon>
@@ -188,13 +207,13 @@
       <!--main-content-->
       <div class="main-content">
 
-        <!--Navbar-->
+        <!--myNavbar-->
         <nav class="mynavbar">
 
           <ul class="mynavbar-list">
 
             <li class="mynavbar-item">
-              <button class="mynavbar-link active" id="home-link" data-nav-link>Accueil</button>
+              <button class="mynavbar-link active" id="home-link" data-nav-link>Home</button>
             </li>
 
             <li class="mynavbar-item">
@@ -202,52 +221,52 @@
             </li>
       
             <li class="mynavbar-item">
-              <button class="mynavbar-link" id="skills-link" data-nav-link>Compétences</button>
+              <button class="mynavbar-link" id="skills-link" data-nav-link>Competences</button>
             </li>
 
             <li class="mynavbar-item">
-              <button class="mynavbar-link" id="journey-link" data-nav-link>Parcours</button>
+              <button class="mynavbar-link" id="journey-link" data-nav-link>Journey</button>
             </li>
 
           </ul>
 
         </nav>
 
-        <!---A PROPOS-->
-        <article class="about  active" data-page="accueil">
+        <!---ABOUT-->
+        <article class="about  active" data-page="home">
 
           <header>
-            <h2 class="h2 article-title">À propos</h2>
+            <h2 class="h2 article-title">About me</h2>
           </header>
 
           <section class="about-text">
             <p>
-              Je suis Développeur Fullstack et Business Analyst basé à Kinshasa. <br>
-              J'aime transformer des problèmes complexes en conceptions simples, belles et intuitives.
+              I'm a Fullstack Developer and Business Analyst in Kinshasa. <br>
+              I enjoy turning complex problems into simple, beautiful and intuitive designs.
             </p>
 
             <p>
-              Mon travail consiste à créer votre projet de sorte qu'il soit fonctionnel, convivial et facile à utiliser. <br>
-              Mon objectif est de faire passer votre message et votre identité de la manière la plus créative possible.
+              My job is to create your project so that it's functional, user-friendly and easy to use. <br>
+              My aim is to bring across your message and identity in the most creative way.
             </p>
           </section>
 
           <!-- service -->
           <section class="service">
 
-            <h3 class="h3 service-title">Mes services ?</h3>
+            <h3 class="h3 service-title">What I'm doing ?</h3>
 
             <ul class="service-list">
               
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img id="darkmode_webdev" class="darkmode_icons" src="./assets/images/web-development.svg" role="img" alt="Développement Web icon" width="40">
+                  <img id="darkmode_webdev" class="darkmode_icons" src="./assets/images/web-development.svg" role="img" alt="Web development icon" width="40">
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Développement Web</h4>
+                  <h4 class="h4 service-item-title">Web development</h4>
                   <p class="service-item-text">
-                    Développement de sites internet et d'applications web.
+                    Websites and web application development.
                   </p>
                 </div>
               </li>
@@ -259,9 +278,9 @@
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Développement Mobile</h4>
+                  <h4 class="h4 service-item-title">Mobile development</h4>
                   <p class="service-item-text">
-                    Développement d'applications Android et iOS.
+                    Android and iOS application development.
                   </p>
                 </div>
               </li>
@@ -276,7 +295,7 @@
                   <h4 class="h4 service-item-title">Web design</h4>
 
                   <p class="service-item-text">
-                    Conception graphique moderne de sites web.
+                    Modern graphic design for websites.
                   </p>
                 </div>
 
@@ -289,10 +308,10 @@
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Design mobile</h4>
+                  <h4 class="h4 service-item-title">Mobile design</h4>
 
                   <p class="service-item-text">
-                    Conception graphique moderne d'applications mobiles pour tous les OS.
+                    Modern graphic design of mobile apps for all OS.
                   </p>
                 </div>
 
@@ -311,7 +330,7 @@
 
             <ul class="project-list">
 
-              <li class="project-item active" data-category="Développement Web">
+              <li class="project-item active" data-category="web development">
                 <a href="https://carlesdesouza.github.io/filmland/" target="_blank">
 
                   <figure class="project-img">
@@ -324,12 +343,12 @@
 
                   <h3 class="project-title">Filmland</h3>
 
-                  <p class="project-category">Développement Web</p>
+                  <p class="project-category">Web development</p>
 
                 </a>
               </li>
 
-              <li class="project-item active" data-category="design mobile">
+              <li class="project-item active" data-category="mobile application">
                 <a href="#" target="_blank">
 
                   <figure class="project-img">
@@ -342,7 +361,7 @@
 
                   <h3 class="project-title">Task Manager</h3>
 
-                  <p class="project-category">Application mobile</p>
+                  <p class="project-category">Mobile application</p>
 
                 </a>
               </li>
@@ -366,22 +385,22 @@
               </li>
 
             </ul>
-            
             <div class="view-more-container"><p class="view-more">
               <i class="bi-info-circle" id="icon-view-more"></i> 
-              Voir tous mes projets dans l'onglet <i class="bi-link" id="icon-view-more"></i> 
+              See all my projects in the tab <i class="bi-link" id="icon-view-more"></i> 
               <span class="highlighted-span" id="portfolio-link-tab" data-nav-link>Portfolio</span></p>
             </div>
           </section>
           <br>
 
-          <!--compétences-->
+          <!--competences-->
           <header>
-            <h2 class="h2 article-title">Compétences</h2>
+            <h2 class="h2 article-title">Skills</h2>
           </header>
           <section class="skill">
             <div class="skills">
               <ul class="project-list" id="skills-list">
+
                 <li class="project-item active">
                   <a href="https://www.javascript.com/" target="_blank">
   
@@ -394,7 +413,7 @@
                     </figure>
   
                     <h3 class="project-title" id="javascript">Javascript</h3>
-                    <p class="project-category">Développement Web</p>
+                    <p class="project-category">Web development</p>
   
                   </a>
                 </li>
@@ -412,7 +431,7 @@
   
                     <h3 class="project-title" id="typescript">Typescript</h3>
   
-                    <p class="project-category">Développement Web</p>
+                    <p class="project-category">Web development</p>
   
                   </a>
                 </li>
@@ -430,7 +449,7 @@
   
                     <h3 class="project-title" id="angular">Angular</h3>
   
-                    <p class="project-category">Développement Web</p>
+                    <p class="project-category">Web development</p>
   
                   </a>
                 </li>
@@ -448,7 +467,7 @@
   
                     <h3 class="project-title" id="java">Java</h3>
   
-                    <p class="project-category">Développement Web</p>
+                    <p class="project-category">Web development</p>
   
                   </a>
                 </li>
@@ -466,7 +485,7 @@
   
                     <h3 class="project-title"id="flutter">Flutter</h3>
   
-                    <p class="project-category">Développement Mobile</p>
+                    <p class="project-category">Mobile development</p>
   
                   </a>
                 </li>
@@ -484,7 +503,7 @@
   
                     <h3 class="project-title" id="mysql">MySQL</h3>
   
-                    <p class="project-category">Base de Données</p>
+                    <p class="project-category">Database</p>
   
                   </a>
                 </li>
@@ -502,7 +521,7 @@
   
                     <h3 class="project-title" id="uml">UML</h3>
   
-                    <p class="project-category">Modélisation</p>
+                    <p class="project-category">Modeling</p>
   
                   </a>
                 </li>
@@ -538,17 +557,18 @@
   
                     <h3 class="project-title" id="docker">Docker</h3>
   
-                    <p class="project-category">Déploiement</p>
+                    <p class="project-category">Deployment</p>
   
                   </a>
                 </li>
+
               </ul>
             </div>
-
+            
             <div class="view-more-container"><p class="view-more">
               <i class="bi-info-circle" id="icon-view-more"></i> 
-              Voir toutes mes compétences dans l'onglet <i class="bi-link" id="icon-view-more"></i> 
-              <span class="highlighted-span" id="skills-link-tab" data-nav-link>Compétences</span></p>
+              See all my skills in the tab <i class="bi-link" id="icon-view-more"></i> 
+              <span class="highlighted-span" id="skills-link-tab" data-nav-link>Competences</span></p>
             </div>
           </section>
           <br>
@@ -567,7 +587,7 @@
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
-                    <img src="./assets/images/certifications/webdeveloper-certificat.jpg" alt="Web Developer Certification" loading="lazy">
+                    <img src="./assets/images/certifications/webdeveloper-certificat.jpg" alt="certification" loading="lazy">
                   </figure>
 
                   <h3 class="project-title"></h3>
@@ -616,15 +636,15 @@
 
             <div class="view-more-container"><p class="view-more">
               <i class="bi-info-circle" id="icon-view-more"></i> 
-              Voir toutes mes certifications dans l'onglet <i class="bi-link" id="icon-view-more"></i> 
-              <span class="highlighted-span" id="certification-link" data-nav-link>Compétences</span></p>
+              See all my certifications in the tab <i class="bi-link" id="icon-view-more"></i> 
+              <span class="highlighted-span" id="certification-link" data-nav-link>Competences</span></p>
             </div>
           </section>
           <br>
 
-          <!--parcours-->
+          <!--journey-->
           <header>
-            <h2 class="h2 article-title">Parcours</h2>
+            <h2 class="h2 article-title">Journey</h2>
           </header>
           <section class="timeline">
 
@@ -633,7 +653,7 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Formations</h3>
+              <h3 class="h3">Education</h3>
             </div>
 
             <ol class="timeline-list">
@@ -645,7 +665,7 @@
                 <span>2024 — 2025</span>
 
                 <p class="timeline-text">
-                  Formation professionnelle en Développement Fullstack Web/Mobile.
+                  Professional training in Fullstack Web/Mobile development.
                 </p>
 
               </li>
@@ -657,7 +677,7 @@
                 <span>2021 — 2023</span>
 
                 <p class="timeline-text">
-                  J'ai obtenu mes bachelors en Développement Web et en Conception Orienté-Objet.
+                  I obtained my bachelor's degrees in Web Development and Object-Oriented Design.
                 </p>
 
               </li>
@@ -665,8 +685,6 @@
             </ol>
 
           </section>
-                    
-          <!--experience-->
           <section class="timeline">
 
             <div class="title-wrapper">
@@ -674,21 +692,20 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Expérience</h3>
+              <h3 class="h3">Experience</h3>
             </div>
 
             <ol class="timeline-list">
 
               <li class="timeline-item">
 
-                <h4 class="h4 timeline-item-title">Développeur Web</h4>
+                <h4 class="h4 timeline-item-title">Web Developer</h4>
 
                 <span>2022 — 2024</span>
 
                 <p class="timeline-text">
-                  J'ai travaillé pour une entreprise de transformation numérique axée sur la construction 
-                  et la mise en œuvre de sécurité des données, de logiciels et de paiement pour les petites
-                  et moyennes entreprises, en tant que développeur Front-End.
+                  I worked for a digital transformation company focused on building and implementation of
+                  data security, software and payments for small and medium-sized as a front-end developer.
                 </p>
 
               </li>
@@ -700,8 +717,8 @@
                 <span>2021 — 2022</span>
 
                 <p class="timeline-text">
-                  J'ai travaillé pour une société de courtage en assurances avec pour objectif d'aider
-                  l'équipe des développeurs à livrer des projets conformes aux besoins de la société.
+                  I worked for an insurance brokerage company with the aim of helping the
+                  developers to deliver projects that met the company's needs.
                 </p>
 
               </li>
@@ -711,11 +728,11 @@
           </section>
           <br>
 
-          <!--CONTACT-->
+          <!--CONTACT OK-->
           <header>
             <h2 class="h2 article-title">Contact</h2>
           </header>
-          <h3 class="h3 form-title">Me rencontrer</h3>
+          <h3 class="h3 form-title">Meet me</h3>
           <section class="mapbox" data-mapbox>
             <figure>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.3177894568585!2d15.33291233406461!3d-4.382022079706863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3797249f3137%3A0xf7d3d8eba0393ca!2sGALERIE%20HUGO%20TANZAMBI!5e0!3m2!1sfr!2scd!4v1688084677875!5m2!1sfr!2scd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -726,30 +743,34 @@
 
 
         <!-- EXTERNAL -->
-        <!--MON PORTFOLIO-->
+        <!--MY PORTFOLIO-->
         <article class="portfolio" data-page="portfolio">
 
           <header>
-            <h2 class="h2 article-title">Mon portfolio</h2>
+            <h2 class="h2 article-title">My portfolio</h2>
           </header>
-
           <section class="projects">
 
             <ul class="filter-list">
+
               <li class="filter-item">
-                <button class="active" data-filter-btn>Tous</button>
+                <button class="active" data-filter-btn>All</button>
               </li>
+
               <li class="filter-item">
-                <button data-filter-btn>Développement Web</button>
+                <button data-filter-btn>Web development</button>
               </li>
+
               <li class="filter-item">
-                <button data-filter-btn>Application mobile</button>
+                <button data-filter-btn>Mobile application</button>
               </li>
+
 <!--               <li class="filter-item">
                 <button data-filter-btn>Web design</button>
               </li>
+
               <li class="filter-item">
-                <button data-filter-btn>Design mobile</button>
+                <button data-filter-btn>Mobile design</button>
               </li> -->
 
             </ul>
@@ -758,7 +779,7 @@
 
               <button class="filter-select" data-select>
 
-                <div class="select-value" data-select-value>Trier par catégorie</div>
+                <div class="select-value" data-select-value>Select category</div>
 
                 <div class="select-icon">
                   <ion-icon name="chevron-down"></ion-icon>
@@ -768,15 +789,15 @@
 
               <ul class="select-list">
                 <li class="select-item">
-                  <button data-select-item>Tous</button>
+                  <button data-select-item>All</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Développement Web</button>
+                  <button data-select-item>Web development</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Application mobile</button>
+                  <button data-select-item>Mobile application</button>
                 </li>
 
 <!--                 <li class="select-item">
@@ -784,14 +805,15 @@
                 </li>
                 
                 <li class="select-item">
-                  <button data-select-item>Design mobile</button>
+                  <button data-select-item>Mobile design</button>
                 </li> -->
               </ul>
 
             </div>
 
             <ul class="project-list">
-              <li class="project-item active" data-filter-item data-category="Développement Web">
+
+              <li class="project-item active" data-filter-item data-category="web development">
                 <a href="#" target="_blank">
 
                   <figure class="project-img">
@@ -803,7 +825,8 @@
                   </figure>
 
                   <h3 class="project-title">Finance</h3>
-                  <p class="project-category">Développement Web</p>
+
+                  <p class="project-category">Web development</p>
 
                 </a>
               </li>
@@ -826,7 +849,7 @@
                 </a>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="Développement Web">
+              <li class="project-item active" data-filter-item data-category="web development">
                 <a href="https://carlesdesouza.github.io/filmland/" target="_blank">
 
                   <figure class="project-img">
@@ -839,12 +862,12 @@
 
                   <h3 class="project-title">Filmland</h3>
 
-                  <p class="project-category">Développement Web</p>
+                  <p class="project-category">Web development</p>
 
                 </a>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="application mobile">
+              <li class="project-item active" data-filter-item data-category="mobile application">
                 <a href="#" target="_blank">
 
                   <figure class="project-img">
@@ -857,12 +880,12 @@
 
                   <h3 class="project-title">Brawlhalla</h3>
 
-                  <p class="project-category">Application mobile</p>
+                  <p class="project-category">Mobile application</p>
 
                 </a>
               </li>
-              
-              <li class="project-item active" data-filter-item data-category="design mobile">
+
+              <li class="project-item active" data-filter-item data-category="mobile design">
                 <a href="#" target="_blank">
 
                   <figure class="project-img">
@@ -875,7 +898,7 @@
 
                   <h3 class="project-title">Task Manager</h3>
 
-                  <p class="project-category">Design mobile</p>
+                  <p class="project-category">Mobile design</p>
 
                 </a>
               </li>
@@ -916,7 +939,7 @@
                 </a>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="Développement Web">
+              <li class="project-item active" data-filter-item data-category="web development">
                 <a href="#" target="_blank">
 
                   <figure class="project-img">
@@ -929,12 +952,12 @@
 
                   <h3 class="project-title">Summary</h3>
 
-                  <p class="project-category">Développement Web</p>
+                  <p class="project-category">Web development</p>
 
                 </a>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="application mobile">
+              <li class="project-item active" data-filter-item data-category="mobile application">
                 <a href="#" target="_blank">
 
                   <figure class="project-img">
@@ -947,12 +970,12 @@
 
                   <h3 class="project-title">Task Manager</h3>
 
-                  <p class="project-category">Application mobile</p>
+                  <p class="project-category">Mobile application</p>
 
                 </a>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="Développement Web">
+              <li class="project-item active" data-filter-item data-category="web development">
                 <a href="#" target="_blank">
 
                   <figure class="project-img">
@@ -965,12 +988,12 @@
 
                   <h3 class="project-title">Arrival</h3>
 
-                  <p class="project-category">Développement Web</p>
+                  <p class="project-category">Web development</p>
 
                 </a>
               </li>
-              
-              <li class="project-item active" data-filter-item data-category="design mobile">
+
+              <li class="project-item active" data-filter-item data-category="mobile design">
                 <a href="#" target="_blank">
 
                   <figure class="project-img">
@@ -983,7 +1006,7 @@
 
                   <h3 class="project-title">Brawlhalla</h3>
 
-                  <p class="project-category">Design mobile</p>
+                  <p class="project-category">Mobile design</p>
 
                 </a>
               </li>
@@ -994,11 +1017,11 @@
 
         </article>
 
-        <!--MES COMPETENCES-->
-        <article class="resume" data-page="compétences">
+        <!--MY COMPETENCES-->
+        <article class="resume" data-page="competences">
 
           <header>
-            <h2 class="h2 article-title">Mes compétences</h2>
+            <h2 class="h2 article-title">My skills</h2>
           </header>
           <section class="skill">
             <div class="skills">
@@ -1016,7 +1039,7 @@
                     </figure>
   
                     <h3 class="project-title" id="javascript">Javascript</h3>
-                    <p class="project-category">Développement Web</p>
+                    <p class="project-category">Web development</p>
   
                   </a>
                 </li>
@@ -1034,7 +1057,7 @@
   
                     <h3 class="project-title" id="typescript">Typescript</h3>
   
-                    <p class="project-category">Développement Web</p>
+                    <p class="project-category">Web development</p>
   
                   </a>
                 </li>
@@ -1052,7 +1075,7 @@
   
                     <h3 class="project-title" id="angular">Angular</h3>
   
-                    <p class="project-category">Développement Web</p>
+                    <p class="project-category">Web development</p>
   
                   </a>
                 </li>
@@ -1070,7 +1093,7 @@
   
                     <h3 class="project-title" id="java">Java</h3>
   
-                    <p class="project-category">Développement Web</p>
+                    <p class="project-category">Web development</p>
   
                   </a>
                 </li>
@@ -1088,7 +1111,7 @@
   
                     <h3 class="project-title" id="html">HTML</h3>
   
-                    <p class="project-category">Développement Web</p>
+                    <p class="project-category">Web development</p>
   
                   </a>
                 </li>
@@ -1106,7 +1129,7 @@
   
                     <h3 class="project-title" id="css">CSS</h3>
   
-                    <p class="project-category">Développement Web</p>
+                    <p class="project-category">Web development</p>
   
                   </a>
                 </li>
@@ -1124,7 +1147,7 @@
   
                     <h3 class="project-title"id="dart">Dart</h3>
   
-                    <p class="project-category">Développement Mobile</p>
+                    <p class="project-category">Mobile development</p>
   
                   </a>
                 </li>
@@ -1142,7 +1165,7 @@
   
                     <h3 class="project-title"id="flutter">Flutter</h3>
   
-                    <p class="project-category">Développement Mobile</p>
+                    <p class="project-category">Mobile development</p>
   
                   </a>
                 </li>
@@ -1160,7 +1183,7 @@
   
                     <h3 class="project-title" id="mysql">MySQL</h3>
   
-                    <p class="project-category">Base de Données</p>
+                    <p class="project-category">Database</p>
   
                   </a>
                 </li>
@@ -1178,7 +1201,7 @@
   
                     <h3 class="project-title" id="uml">UML</h3>
   
-                    <p class="project-category">Modélisation</p>
+                    <p class="project-category">Modeling</p>
   
                   </a>
                 </li>
@@ -1214,18 +1237,18 @@
   
                     <h3 class="project-title" id="docker">Docker</h3>
   
-                    <p class="project-category">Déploiement</p>
+                    <p class="project-category">Deployment</p>
   
                   </a>
                 </li>
   
               </ul>
             </div>
-          </section>          
+          </section>
 
-          <!--MES CERTIFICATIONS-->
+          <!--MY CERTIFICATIONS-->
           <header>
-            <h2 class="h2 article-title" id="certification-page">Mes Certifications</h2>
+            <h2 class="h2 article-title" id="certification-page">My Certifications</h2>
           </header>
           <section class="projects">
             <ul class="project-list">
@@ -1339,11 +1362,11 @@
 
         </article>
 
-        <!--MON PARCOURS-->
-        <article class="resume" data-page="parcours">
+        <!--MY JOURNEY-->
+        <article class="resume" data-page="journey">
 
           <header>
-            <h2 class="h2 article-title">Mon parcours</h2>
+            <h2 class="h2 article-title">My Journey</h2>
           </header>
           <section class="timeline">
 
@@ -1352,7 +1375,7 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Formations</h3>
+              <h3 class="h3">Education</h3>
             </div>
 
             <ol class="timeline-list">
@@ -1364,7 +1387,7 @@
                 <span>2024 — 2025</span>
 
                 <p class="timeline-text">
-                  Formation professionnelle en Développement Fullstack Web/Mobile.
+                  Professional training in Fullstack Web/Mobile development.
                 </p>
 
               </li>
@@ -1376,33 +1399,32 @@
                 <span>2021 — 2023</span>
 
                 <p class="timeline-text">
-                  J'ai obtenu mes bachelors en Développement Web et en Conception Orienté-Objet.
+                  I obtained my bachelor's degrees in web development and in Oriented-Object Design.
                 </p>
 
               </li>
 
               <li class="timeline-item">
 
-                <h4 class="h4 timeline-item-title">Académie Des Beaux-Arts</h4>
+                <h4 class="h4 timeline-item-title">Academy of Fine Arts</h4>
 
                 <span>2015 — 2018</span>
 
                 <p class="timeline-text">
-                  Trois années académiques en Communication Visuelle 
-                  où j'ai appris et maîtrisé le design graphique.
+                  Three academic years in Visual Communications, where I learned and mastered graphic design.
                 </p>
 
               </li>
 
               <li class="timeline-item">
 
-                <h4 class="h4 timeline-item-title">École des Arts et Métiers</h4>
+                <h4 class="h4 timeline-item-title">High School of Arts and Crafts</h4>
 
                 <span>2014 — 2015</span>
 
                 <p class="timeline-text">
-                  J'ai obtenu mon diplôme d'État en section Littéraire 
-                  où j'ai acquis d'excellentes bases en communication écrite et en art oratoire.
+                  I obtained my state diploma in the Literary section, 
+                  where I acquired an excellent grounding in written communication and public speaking.
                 </p>
 
               </li>
@@ -1418,21 +1440,20 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Expérience</h3>
+              <h3 class="h3">Experience</h3>
             </div>
 
             <ol class="timeline-list">
 
               <li class="timeline-item">
 
-                <h4 class="h4 timeline-item-title">Développeur Web</h4>
+                <h4 class="h4 timeline-item-title">Web Developer</h4>
 
                 <span>2022 — 2024</span>
 
                 <p class="timeline-text">
-                  J'ai travaillé pour une entreprise de transformation numérique axée sur la construction 
-                  et la mise en œuvre de sécurité des données, de logiciels et de paiement pour les petites
-                  et moyennes entreprises, en tant que développeur Front-End.
+                  I worked for a digital transformation company focused on building and implementation of
+                  data security, software and payments for small and medium-sized as a front-end developer.
                 </p>
 
               </li>
@@ -1444,21 +1465,21 @@
                 <span>2021 — 2022</span>
 
                 <p class="timeline-text">
-                  J'ai travaillé pour une société de courtage en assurances avec pour objectif d'aider
-                  l'équipe des développeurs à livrer des projets conformes aux besoins de la société.
+                  I worked for an insurance brokerage company with the aim of helping the
+                  developers to deliver projects that met the company's needs.
                 </p>
 
               </li>
 
               <li class="timeline-item">
 
-                <h4 class="h4 timeline-item-title">Designer Graphique</h4>
+                <h4 class="h4 timeline-item-title">Graphic Designer</h4>
 
                 <span>2018 — 2021</span>
 
                 <p class="timeline-text">
-                  J'ai travaillé pour divers clients indépendants et agences dans le monde entier. <br>
-                  Mon objectif était de concevoir des concepts visuels captivants pour mettre en avant leurs produits et services.
+                  I've worked for various agencies and independent clients all over the world. <br>
+                  My aim was to create captivating visual concepts to showcase their products and services.
                 </p>
 
               </li>
@@ -1473,23 +1494,21 @@
 
     <!-- BUTTON SCROLL TOP-->
     <div id="scrollTopBtn">
-      <div id="icon-scroll" title="Revenir en haut">
+      <div id="icon-scroll" title="Back to Top">
         <ion-icon name="chevron-up"></ion-icon>
       </div>
     </div>
     
     <footer class="footer">
-      <p class="copyright"> &copy; 2023 <span class="highlighted-span" id="copyright-span">Carles De Souza</span>. Tous droits réservés</p>
+      <p class="copyright"> &copy; 2023 <span class="highlighted-span" id="copyright-span">Carles De Souza</span>. All rights reserved</p>
     </footer>
 
     <!--ionicon link -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    
     <!-- bootstrap link-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
-    <!--js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>    
+    <!--custom js link -->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
